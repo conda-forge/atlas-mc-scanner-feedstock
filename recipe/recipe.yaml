@@ -30,6 +30,8 @@ requirements:
     - python >=${{ python_min }}
     - typer >=0.9.0
     - func_adl_servicex_xaodr25
+    - func-adl >=3.5.0
+    - servicex 3.1.1.*
     - awkward
     - servicex-analysis-utils
     - tabulate
