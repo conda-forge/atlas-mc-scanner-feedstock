@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: atlas-mc-scanner
-  version: "1.0.0"
+  version: "1.0.1"
   python_min: "3.10"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/atlas_mc_scanner-${{ version }}.tar.gz
-  sha256: 9edb7a0d6cb74d94ac653f93ca1447c5af068fc6c3698f08f10324ba9c7f7938
+  sha256: 42e19a8b5d45e20ce8cbc5719e9141e2ec3bce9f785bfab89501286714476225
 
 build:
   number: 0
@@ -30,6 +30,8 @@ requirements:
     - python >=${{ python_min }}
     - typer >=0.9.0
     - func_adl_servicex_xaodr25
+    - func-adl >=3.5.0
+    - servicex 3.1.1.*
     - awkward
     - servicex-analysis-utils
     - tabulate
